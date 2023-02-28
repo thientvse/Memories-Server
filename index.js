@@ -16,6 +16,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/', (req, res) => {
+        res.send("Hello to Memories API");
+});
+
 // mongodb.com
 
 // const CONNECTION_URL = 'mongodb+srv://React123:React123@cluster0.yat5orn.mongodb.net/?retryWrites=true&w=majority';
